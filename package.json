@@ -4,6 +4,7 @@
   "description": "a restful project based on koa",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "test"
   },
   "repository": {
