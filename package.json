@@ -1,0 +1,25 @@
+{
+  "name": "koa-pro",
+  "version": "0.0.1",
+  "description": "a restful project based on koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolyjjj/koa-pro.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "koly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolyjjj/koa-pro/issues"
+  },
+  "homepage": "https://github.com/kolyjjj/koa-pro#readme",
+  "dependencies": {
+    "koa": "^1.0.0"
+  }
+}
