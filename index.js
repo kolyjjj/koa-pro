@@ -6,4 +6,4 @@ app.use(route.get('/', function *(){
   this.body = {msg: 'hello world'};
 }));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
