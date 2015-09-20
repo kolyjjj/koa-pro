@@ -8,7 +8,7 @@ var url = 'mongodb://localhost:10087/test';
 var app = koa();
 
 app.use(mongo({
-  uri: 'mongodb://localhost:10087/test',
+  uri: 'mongodb://localhost:10087/dev',
   max: 100,
   min: 1,
   timeout: 30000,
@@ -18,7 +18,7 @@ app.use(mongo({
 app.use(staticServe(__dirname + '/static'));
 
 app.use(route.get('/api/', function *(){
-  this.body = yield this.mongo.db('test').collection('restaurants').findOne();
+  this.body = yield this.mongo.db('dev').collection('users').findOne();
 }));
 
 app.listen(process.env.PORT || 3000);

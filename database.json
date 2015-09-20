@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "driver": "mongodb",
+    "database": "dev",
+    "host": "localhost",
+    "port": "10087"
+  }
+}
