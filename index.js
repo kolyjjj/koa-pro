@@ -2,8 +2,6 @@ var koa = require('koa');
 var route = require('koa-route');
 var staticServe = require('koa-static');
 var mongo = require('koa-mongo');
-var assert = require('assert');
-var url = 'mongodb://localhost:10087/test';
 var api = require('./api');
 
 var app = module.exports = koa();
