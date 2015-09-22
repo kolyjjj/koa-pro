@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node --harmony index",
     "test": "./node_modules/mocha/bin/mocha",
-    "migrate": "./node_modules/db-migrate/bin/db-migrate up -env dev"
+    "mUp": "./node_modules/db-migrate/bin/db-migrate up -env dev",
+    "mDown": "./node_modules/db-migrate/bin/db-migrate down -env dev --count 50"
   },
   "repository": {
     "type": "git",
