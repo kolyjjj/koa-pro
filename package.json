@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node --harmony index",
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "migrate": "./node_modules/db-migrate/bin/db-migrate up -env dev"
   },
   "repository": {
     "type": "git",

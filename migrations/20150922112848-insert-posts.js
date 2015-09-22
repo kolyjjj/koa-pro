@@ -10,6 +10,15 @@ exports.up = function(db, callback) {
   }, function(){
 
   });
+
+  // db.insert('posts', {
+  //   title: '甘草',
+  //   author: 'Baidu',
+  //   content: '甘草，别名：国老、甜草、乌拉尔甘草、甜根子。豆科、甘草属多年生草本，根与根状茎粗壮，是一种补益中草药。对人体很好地一种药，药用部位是根及根茎，药材性状根呈圆柱形，长25~100厘米，直径0.6~3.5厘米。',
+  //   thumbnail: '/thumbnail/shaoyao.jpg'
+  // }, function(){
+  //
+  // });
 };
 
 exports.down = function(db, callback) {
