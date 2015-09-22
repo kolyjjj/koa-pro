@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node --harmony index",
-    "test": "test"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,9 @@
     "koa-mongo": "^0.4.1",
     "koa-route": "^2.4.2",
     "koa-static": "^1.4.9"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
   }
 }

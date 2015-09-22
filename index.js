@@ -5,7 +5,7 @@ var mongo = require('koa-mongo');
 var assert = require('assert');
 var url = 'mongodb://localhost:10087/test';
 
-var app = koa();
+var app = module.exports = koa();
 
 app.use(mongo({
   uri: 'mongodb://localhost:10087/dev',
@@ -17,8 +17,9 @@ app.use(mongo({
 
 app.use(staticServe(__dirname + '/static'));
 
-app.use(route.get('/api/', function *(){
-  this.body = yield this.mongo.db('dev').collection('users').findOne();
+app.use(route.get('/api/posts', function *(){
+  var post = yield this.mongo.db('dev').collection('posts').findOne();
+  this.body = {post: post};
 }));
 
 app.listen(process.env.PORT || 3000);
