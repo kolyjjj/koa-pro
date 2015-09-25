@@ -1,7 +1,4 @@
-/** @jsx React.DOM */
-
-
-// var React = require('react');
+var React = require('react');
 
 React.render(
   <h1>Hello, React!</h1>,
